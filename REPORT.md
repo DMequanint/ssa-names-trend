@@ -31,5 +31,5 @@ cat > REPORT.md << 'EOF'
 
 **Key Insight**: Highly ambiguous names (M/F ratio ≥0.8) show cultural shift toward gender-neutral naming patterns.
 
-**Raw Data**: [ambiguity_summary.csv](outputs/tables/ambiguity_summary.csv)
+**Raw Data**: [ambiguity_summary.csv](data_summary/ambiguity_summary.csv)
 EOF
