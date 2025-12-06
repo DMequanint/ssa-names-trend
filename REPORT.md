@@ -1,4 +1,3 @@
-cat > REPORT.md << 'EOF'
 # Baby Names Analysis Results
 
 ## Data Format & Limitations
