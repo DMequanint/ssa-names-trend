@@ -1,5 +1,5 @@
 cat > REPORT.md << 'EOF'
-# Baby Names Analysis Results 🎯
+# Baby Names Analysis Results
 
 ## Data Format & Limitations
 - **51 state files** (AK.TXT–WY.TXT + DC.TXT): `state,sex,year,name,count`
@@ -7,7 +7,7 @@ cat > REPORT.md << 'EOF'
 - **Privacy**: ≥5 occurrences only per state/year
 - **Limitations**: SSN coverage gaps, no demographics [web:17]
 
-## Part A: Descriptive Analysis ✅
+## Part A: Descriptive Analysis 
 
 ### Most Popular Name All-Time
 | name  | count   |
