@@ -30,4 +30,18 @@
 
 **Key Insight**: Highly ambiguous names (M/F ratio ≥0.8) show cultural shift toward gender-neutral naming patterns.
 
-**Raw Data**: [ambiguity_summary.csv](outputs/tables/ambiguity_summary.csv)
+
+### Sample Gender Ambiguity Data
+
+### Sample Gender Ambiguity Data
+
+### Sample Results (ambiguity_summary.csv)
+```csv
+year,num_highly_ambiguous_names,share_babies_ambiguous
+1910,2,0.27353087577061114
+1911,2,0.30673142178486595
+1912,0,0.3233341291255445
+1913,2,0.3485038067154914
+```
+
+**Full dataset**: Run `python run_all.py` locally
