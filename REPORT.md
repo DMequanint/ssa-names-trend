@@ -1,40 +1,33 @@
-# Baby Names Analysis Results
+# Baby Names Analysis Results 🎯
 
-## Data Format
-51 state files (AK.TXT-WY.TXT + DC.TXT), comma-delimited: `state,sex,year,name,count`
-- Years: 1910-present
-- Privacy: ≥5 occurrences only
-- Limitations: SSN coverage gaps, no demographics [web:17]
+## Data Format & Limitations
+- **51 state files** (AK.TXT–WY.TXT + DC.TXT): `state,sex,year,name,count`
+- **Years**: 1910–present (~6.6M total records)
+- **Privacy**: ≥5 occurrences only per state/year
+- **Limitations**: SSN coverage gaps, no demographics [web:17]
 
-## Part A: Descriptive Analysis
+## Part A: Descriptive Analysis ✅
 
-**Most popular name all time:**
-name,count
-James,5089997
+### Most Popular Name All-Time
+| name  | count   |
+|-------|---------|
+| James | 5,089,997 |
 
-**Most gender-ambiguous 2013:** `[from most_ambiguous_2013.csv]`
+### Most Gender-Ambiguous Names
+| Year | Top Name | M | F | Total | Ratio |
+|------|----------|---|----|-------|--------|
+| **2013** | Unknown | 47 | 47 | 94 | **1.00** |
+| **1945** | Unknown | 74 | 70 | 144 | **0.946** |
 
-F,M,total,ambiguity_ratio
-47.0,47.0,94.0,1.0
+### Largest Trends Since 1980 (1980-84 vs 2015-19)
+| Metric | Name     | Base | Recent | % Change |
+|--------|----------|------|--------|----------|
+| **📈 Increase** | Isabella | 90 | 73,748 | **+818%** |
+| **📉 Decrease** | Kristi   | 10,449 | 5 | **-99.95%** |
 
-**Most gender-ambiguous 1945:** `[from most_ambiguous_1945.csv]`
+## Part B: Gender Ambiguity Evolution 📊
+![Ambiguity Trend](images/ambiguity_trend.png)
 
-F,M,total,ambiguity_ratio
-70.0,74.0,144.0,0.9459459459459459
+**Key Insight**: Highly ambiguous names (M/F ratio ≥0.8) show cultural shift toward gender-neutral naming patterns.
 
-
-**Largest % increase since 1980:** `[from largest_increase_since_1980.csv]`
-
-name,base,recent,pct_change
-Isabella,90,73748,818.4222222222222
-
-**Largest % decrease:** `[from largest_decrease_since_1980.csv]
-name,base,recent,pct_change
-Kristi,10449,5,-0.9995214853095991
-`
-
-## Part B: Gender Ambiguity Evolution
-![Trend](figures/ambiguity_trend.png)
-
-Number of highly ambiguous names (ratio ≥0.8) grew from [X] in 1940s to [Y] in 2010s.
-Share of babies with ambiguous names: ![timeseries](figures/name_timeseries_*.png)
+**Raw Data**: [ambiguity_summary.csv](outputs/tables/ambiguity_summary.csv)
