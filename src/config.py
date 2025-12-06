@@ -1,0 +1,14 @@
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DATA_RAW = PROJECT_ROOT / "data" / "raw"
+OUTPUT_TABLES = PROJECT_ROOT / "outputs" / "tables"
+FIGURES = PROJECT_ROOT / "figures"
+
+YEARS_START = 1910
+AMBIGUITY_MIN_TOTAL = 50
+
+TREND_BASE_START = 1980
+TREND_BASE_END = 1984
+TREND_RECENT_START = 2015
+TREND_RECENT_END = 2019

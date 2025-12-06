@@ -1,0 +1,17 @@
+# Data (50MB+ - don't commit)
+data/raw/
+data/processed/
+
+# Outputs
+outputs/
+figures/
+
+# Environment
+venv/
+__pycache__/
+*.pyc
+.env
+
+# IDE
+.vscode/
+.idea/
